@@ -1,0 +1,41 @@
+name: Update HH feed
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-feed
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Пересобрать фид
+        run: python build_feed.py
+
+      - name: Закоммитить, если цены изменились
+        run: |
+          git config user.name "feed-bot"
+          git config user.email "feed-bot@users.noreply.github.com"
+          git add docs/feed.xml
+          if git diff --cached --quiet; then
+            echo "Изменений нет"
+          else
+            git commit -m "Update feed prices"
+            git push
+          fi
