@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-19T12:00:00+03:00">
+<yml_catalog date="2026-11-02T10:18:39+03:00">
   <shop>
     <name>МШП</name>
     <description>Онлайн-школа профессий и навыков: дизайн, маркетинг, психология, бизнес</description>
     <url>https://online.videoforme.ru</url>
     <currencies>
-      <currency id="RUB" rate="1"/>
+      <currency id="RUB" rate="1" />
     </currencies>
     <offers>
       <offer id="bd040f38-a145-0a51-6906-6165a30ed201_online" available="true">
@@ -14,10 +14,10 @@
         <param name="Уровень курса">С Нуля</param>
         <param name="Формат курса">ONLINE</param>
         <param name="Длительность курса">5 недель</param>
-        <oldprice>32900</oldprice>
-        <price>19700</price>
+        <oldprice>33200</oldprice>
+        <price>19900</price>
         <discount>40</discount>
-        <param name="Ежемесячный платеж">3300</param>
+        <param name="Ежемесячный платеж">3400</param>
         <currencyId>RUB</currencyId>
         <param name="Ссылка на курс">https://online.videoforme.ru/market_school/copywrite-1?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Kursy_kopiraytinga&amp;utm_term=hh_cpa</param>
         <param name="Выдаётся сертификат">Да</param>
@@ -62,7 +62,7 @@
         <oldprice>58500</oldprice>
         <price>35100</price>
         <discount>40</discount>
-        <param name="Ежемесячный платеж">3900</param>
+        <param name="Ежемесячный платеж">2925</param>
         <currencyId>RUB</currencyId>
         <param name="Промокод">HH5</param>
         <param name="Скидка по промокоду в процентах">5</param>
@@ -76,10 +76,10 @@
         <param name="Уровень курса">С Нуля</param>
         <param name="Формат курса">ONLINE</param>
         <param name="Длительность курса">5 недель</param>
-        <oldprice>25500</oldprice>
-        <price>15300</price>
+        <oldprice>39900</oldprice>
+        <price>23900</price>
         <discount>40</discount>
-        <param name="Ежемесячный платеж">2600</param>
+        <param name="Ежемесячный платеж">4000</param>
         <currencyId>RUB</currencyId>
         <param name="Ссылка на курс">https://online.videoforme.ru/computer-programming-school/excel-pro-courses-web?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Kursy_Excel_prodvinutyy_uroven&amp;utm_term=hh_cpa</param>
         <param name="Выдаётся сертификат">Да</param>
@@ -156,7 +156,7 @@
         <oldprice>63000</oldprice>
         <price>37800</price>
         <discount>40</discount>
-        <param name="Ежемесячный платеж">4200</param>
+        <param name="Ежемесячный платеж">3150</param>
         <currencyId>RUB</currencyId>
         <param name="Промокод">HH5</param>
         <param name="Скидка по промокоду в процентах">5</param>
