@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2026-10-19T12:00:00+03:00">
+  <shop>
+    <name>Академия Эколь</name>
+    <description>Онлайн-академия индустрии красоты: косметология, массаж, ногти, ресницы, стиль</description>
+    <url>https://online.ecolespb.ru</url>
+    <currencies>
+      <currency id="RUB" rate="1"/>
+    </currencies>
+    <offers>
+      <offer id="5ca11546-6b38-b0c6-1ea4-627e21375d9e_online" available="true">
+        <name>Курсы визажистов для начинающих</name>
+        <description>Онлайн-курс «Курсы визажистов для начинающих». Уровень: с нуля. Длительность: 4 часа.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">4 часа</param>
+        <oldprice>21000</oldprice>
+        <price>12600</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">4200</param>
+        <currencyId>RUB</currencyId>
+        <param name="Ссылка на курс">https://online.ecolespb.ru/makeup-school/visage?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Kursy_vizazhistov_dlya_nachinayuschikh&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+      <offer id="ab0d0997-fbce-3bcc-adaf-65ba8126da52_online" available="true">
+        <name>Курсы маникюра для начинающих</name>
+        <description>Онлайн-курс «Курсы маникюра для начинающих». Уровень: с нуля. Длительность: 4 часа.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">4 часа</param>
+        <oldprice>8000</oldprice>
+        <price>4800</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">0</param>
+        <currencyId>RUB</currencyId>
+        <param name="Ссылка на курс">https://online.ecolespb.ru/manicure-school/kursy-manikyura?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Kursy_manikyura_dlya_nachinayuschikh&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+      <offer id="13424bdf-e3e9-6e63-b43e-618913087032_online" available="true">
+        <name>Курсы эстетической косметологии</name>
+        <description>Онлайн-курс «Курсы эстетической косметологии». Уровень: с нуля. Длительность: 6 часов.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">6 часов</param>
+        <oldprice>22700</oldprice>
+        <price>13600</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">4600</param>
+        <currencyId>RUB</currencyId>
+        <param name="Ссылка на курс">https://online.ecolespb.ru/cosmetology-school/upkeep?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Kursy_esteticheskoy_kosmetologii&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+      <offer id="552cf8ee-25f3-0f4b-b367-66e30579cc72_online" available="true">
+        <name>Эксперт по дизайну взгляда</name>
+        <description>Онлайн-курс «Эксперт по дизайну взгляда». Уровень: с нуля. Длительность: 18 часов.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">18 часов</param>
+        <oldprice>48200</oldprice>
+        <price>28900</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">4900</param>
+        <currencyId>RUB</currencyId>
+        <param name="Промокод">HH5</param>
+        <param name="Скидка по промокоду в процентах">5</param>
+        <param name="Ссылка на курс">https://online.ecolespb.ru/browmaker-lashmaker/programm-programm-brow_and_eyelashes?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Ekspert_po_dizaynu_vzglyada&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+      <offer id="5a7d2ca9-44dd-5d3c-4db7-651a9b8d0871_online" available="true">
+        <name>Косметолог-эстетист (без мед. образования)</name>
+        <description>Онлайн-курс «Косметолог-эстетист (без мед. образования)». Уровень: с нуля. Длительность: 13 часов.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">13 часов</param>
+        <oldprice>60700</oldprice>
+        <price>36400</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">4100</param>
+        <currencyId>RUB</currencyId>
+        <param name="Промокод">HH5</param>
+        <param name="Скидка по промокоду в процентах">5</param>
+        <param name="Ссылка на курс">https://online.ecolespb.ru/cosmetology-school/programm-kosmetolog-ehstetist?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Kosmetolog-estetist_bez_med._obrazovaniya&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+      <offer id="7aaced9e-1135-9e83-7f57-65099c7de5d7_online" available="true">
+        <name>Мастер Маникюра и педикюра</name>
+        <description>Онлайн-курс «Мастер Маникюра и педикюра». Уровень: с нуля. Длительность: 12 часов.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">12 часов</param>
+        <oldprice>46000</oldprice>
+        <price>27600</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">4600</param>
+        <currencyId>RUB</currencyId>
+        <param name="Промокод">HH5</param>
+        <param name="Скидка по промокоду в процентах">5</param>
+        <param name="Ссылка на курс">https://online.ecolespb.ru/manicure-school/programm-master-manikyura-i-pedikyura?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Master_Manikyura_i_pedikyura&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+      <offer id="8479e9a1-cd75-b4bb-5e2c-672600b91450_online" available="true">
+        <name>Мастер по наращиванию ресниц (лэшмейкер)</name>
+        <description>Онлайн-курс «Мастер по наращиванию ресниц (лэшмейкер)». Уровень: с нуля. Длительность: 6 часов.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">6 часов</param>
+        <oldprice>33400</oldprice>
+        <price>20000</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">3400</param>
+        <currencyId>RUB</currencyId>
+        <param name="Промокод">HH5</param>
+        <param name="Скидка по промокоду в процентах">5</param>
+        <param name="Ссылка на курс">https://online.ecolespb.ru/browmaker-lashmaker/programm-lesmeister?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Master_po_naraschivaniyu_resnits_leshmeyker&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+      <offer id="79ec4b70-f963-dfa6-2e52-69c545e6cde1_online" available="true">
+        <name>Стилист-имиджмейкер</name>
+        <description>Онлайн-курс «Стилист-имиджмейкер». Уровень: с нуля. Длительность: 36 часов.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">36 часов</param>
+        <oldprice>59900</oldprice>
+        <price>35900</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">4000</param>
+        <currencyId>RUB</currencyId>
+        <param name="Промокод">HH5</param>
+        <param name="Скидка по промокоду в процентах">5</param>
+        <param name="Ссылка на курс">https://online.ecolespb.ru/style-school/programm-stilist-imidzhmejker?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Stilist-imidzhmeyker&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>
