@@ -111,41 +111,36 @@ def find_monthly(raw_html: str, price: int):
 def find_pair(cands: Counter, prev_old: int, prev_price: int, prev_discount: int):
     """Возвращает (oldprice, price, уверенность) или None.
 
-    high   - пара совпала по скидке с прежней (старая цена и новая в той же пропорции);
-    medium - одна из цен совпала с прежней, вторая изменилась;
-    low    - пара найдена только по общей эвристике (в фид не применяется).
+    Новая цена - всегда самое частое число на странице (цена повторяется в нескольких
+    блоках, посторонние числа вроде «до 150 000 ₽ в месяц» встречаются один раз).
+
+    high      - старая цена найдена по прежней пропорции скидки;
+    medium    - старая цена осталась прежней, а новая (скидка) изменилась;
+    unchanged - цена на странице совпала с прежней, старую цену подтвердить не удалось,
+                но менять нечего.
     """
-    values = sorted(cands)
+    if not cands:
+        return None
+    top = max(cands.values())
+    news = sorted(v for v, c in cands.items() if c == top)
     ratio = 1 - prev_discount / 100
 
     best = None
-    for old in values:
-        for new in values:
-            if new >= old:
-                continue
-            if abs(new / old - ratio) <= DISCOUNT_TOL:
-                score = (cands[old] + cands[new], old)
+    for new in news:
+        for old in cands:
+            if old > new and abs(new / old - ratio) <= DISCOUNT_TOL:
+                score = (cands[old], old)
                 if best is None or score > best[0]:
                     best = (score, old, new)
     if best:
         return best[1], best[2], "high"
 
-    medium = []
-    for new in values:
-        if prev_old in cands and 0.2 <= new / prev_old <= 0.95:
-            medium.append((cands[new], prev_old, new))
-    for old in values:
-        if prev_price in cands and 0.2 <= prev_price / old <= 0.95:
-            medium.append((cands[old], old, prev_price))
-    if medium:
-        _, old, new = max(medium)
-        return old, new, "medium"
+    for new in news:
+        if prev_old in cands and 0.4 <= new / prev_old <= 0.9:
+            return prev_old, new, "medium"
 
-    low = [(cands[o] + cands[n], o, n) for o in values for n in values
-           if n < o and 0.25 <= n / o <= 0.95]
-    if low:
-        _, old, new = max(low)
-        return old, new, "low"
+    if prev_price in news:
+        return prev_old, prev_price, "unchanged"
     return None
 
 
@@ -201,12 +196,18 @@ def process_offer(session, offer, debug=False):
     old, new, conf = pair
     if debug:
         print(f"  пара: old={old} price={new} уверенность={conf}")
-    if conf == "low":
-        return None, f"{name}: найдена пара {old}/{new} с низкой уверенностью, не применяю"
 
-    if abs(new - prev_price) / prev_price > MAX_CHANGE:
+    change = abs(new - prev_price) / prev_price
+    limit = 1.0 if conf == "high" else MAX_CHANGE
+    if change > limit:
         return None, (f"{name}: цена изменилась слишком сильно ({prev_price} -> {new}), "
                       f"проверьте вручную")
+
+    note = None
+    if change > 0.3:
+        note = f"большое изменение цены {prev_price} -> {new}, проверьте на сайте"
+    if conf == "unchanged":
+        note = "старую цену на странице подтвердить не удалось, оставлена прежняя"
 
     monthly = find_monthly(raw, new)
     return {
@@ -214,6 +215,7 @@ def process_offer(session, offer, debug=False):
         "price": new,
         "discount": round((1 - new / old) * 100),
         "monthly": monthly,
+        "note": note,
     }, None
 
 
@@ -252,6 +254,8 @@ def main():
             warnings.append(warn)
             continue
         ok += 1
+        if values.get("note"):
+            print(f"::warning::{offer.findtext('name')}: {values['note']}")
         apply_values(offer, values)
         after = snapshot(offer)
         if after != before:
