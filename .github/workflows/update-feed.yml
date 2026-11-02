@@ -2,8 +2,8 @@ name: Update HH feed
 
 on:
   schedule:
-    - cron: "17 */6 * * *"
-  workflow_dispatch:
+    - cron: "17 */6 * * *"   # каждые 6 часов (UTC)
+  workflow_dispatch:          # ручной запуск из вкладки Actions
 
 permissions:
   contents: write
@@ -25,14 +25,19 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Пересобрать фид
-        run: python build_feed.py
+      - name: Пересобрать фид МШП
+        run: python build_feed.py --feed docs/feed.xml
+
+      - name: Пересобрать фид Эколь
+        if: "!cancelled()"
+        run: python build_feed.py --feed docs/feed_ecole.xml
 
       - name: Закоммитить, если цены изменились
+        if: "!cancelled()"
         run: |
           git config user.name "feed-bot"
           git config user.email "feed-bot@users.noreply.github.com"
-          git add docs/feed.xml
+          git add docs/feed.xml docs/feed_ecole.xml
           if git diff --cached --quiet; then
             echo "Изменений нет"
           else
