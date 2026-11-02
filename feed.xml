@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2026-10-19T12:00:00+03:00">
+  <shop>
+    <name>МШП</name>
+    <description>Онлайн-школа профессий и навыков: дизайн, маркетинг, психология, бизнес</description>
+    <url>https://online.videoforme.ru</url>
+    <currencies>
+      <currency id="RUB" rate="1"/>
+    </currencies>
+    <offers>
+      <offer id="bd040f38-a145-0a51-6906-6165a30ed201_online" available="true">
+        <name>Курсы копирайтинга</name>
+        <description>Онлайн-курс «Курсы копирайтинга». Уровень: с нуля. Длительность: 5 недель.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">5 недель</param>
+        <oldprice>32900</oldprice>
+        <price>19700</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">3300</param>
+        <currencyId>RUB</currencyId>
+        <param name="Ссылка на курс">https://online.videoforme.ru/market_school/copywrite-1?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Kursy_kopiraytinga&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+      <offer id="c1732ab8-0acc-9f76-4e10-5f194f044238_online" available="true">
+        <name>Курсы создания и продвижения сайтов на Tilda</name>
+        <description>Онлайн-курс «Курсы создания и продвижения сайтов на Tilda». Уровень: с нуля. Длительность: 5 недель.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">5 недель</param>
+        <oldprice>32700</oldprice>
+        <price>19600</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">3300</param>
+        <currencyId>RUB</currencyId>
+        <param name="Ссылка на курс">https://online.videoforme.ru/market_school/create-site-web?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Kursy_sozdaniya_i_prodvizheniya_saytov_na_Tilda&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+      <offer id="205202be-b2f8-3205-54bd-5c9cf2b39fe8_online" available="true">
+        <name>Курсы контекстной рекламы</name>
+        <description>Онлайн-курс «Курсы контекстной рекламы». Уровень: с нуля. Длительность: 5 недель.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">5 недель</param>
+        <oldprice>32700</oldprice>
+        <price>19600</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">3300</param>
+        <currencyId>RUB</currencyId>
+        <param name="Ссылка на курс">https://online.videoforme.ru/market_school/context-web?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Kursy_kontekstnoy_reklamy&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+      <offer id="adffdf09-2946-9dd1-243e-6634fbef3725_online" available="true">
+        <name>Хоумстейджер: подготовка к продаже</name>
+        <description>Онлайн-курс «Хоумстейджер: подготовка к продаже». Уровень: с нуля. Длительность: 10 недель.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">10 недель</param>
+        <oldprice>58500</oldprice>
+        <price>35100</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">3900</param>
+        <currencyId>RUB</currencyId>
+        <param name="Промокод">HH5</param>
+        <param name="Скидка по промокоду в процентах">5</param>
+        <param name="Ссылка на курс">https://online.videoforme.ru/designschool/houmstejdzher-prof-web?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Spetsialist_po_podgotovke_nedvizhimosti_k_prodazhe_khoumsteydzher&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+      <offer id="e7ed6ca7-4c24-6258-1ce5-632dca61ba2f_online" available="true">
+        <name>Курсы Excel: продвинутый уровень</name>
+        <description>Онлайн-курс «Курсы Excel: продвинутый уровень». Уровень: с нуля. Длительность: 5 недель.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">5 недель</param>
+        <oldprice>25500</oldprice>
+        <price>15300</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">2600</param>
+        <currencyId>RUB</currencyId>
+        <param name="Ссылка на курс">https://online.videoforme.ru/computer-programming-school/excel-pro-courses-web?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Kursy_Excel_prodvinutyy_uroven&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+      <offer id="d05a2b5e-b522-0188-7222-622f07822a55_online" available="true">
+        <name>Курсы коучинга</name>
+        <description>Онлайн-курс «Курсы коучинга». Уровень: с нуля. Длительность: 5 недель.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">5 недель</param>
+        <oldprice>30200</oldprice>
+        <price>18100</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">3100</param>
+        <currencyId>RUB</currencyId>
+        <param name="Ссылка на курс">https://online.videoforme.ru/psychology/training-of-trainers-web?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Kursy_kouchinga&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+      <offer id="15_online" available="true">
+        <name>Курсы техники речи</name>
+        <description>Онлайн-курс «Курсы техники речи». Уровень: с нуля. Длительность: 3 недели.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">3 недели</param>
+        <oldprice>11400</oldprice>
+        <price>6800</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">0</param>
+        <currencyId>RUB</currencyId>
+        <param name="Ссылка на курс">https://online.videoforme.ru/actors_school/speech-web?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Kursy_tekhniki_rechi&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+      <offer id="63b4c67c-ab31-cefe-e06d-65fac03e5751_online" available="true">
+        <name>Руководитель отдела продаж</name>
+        <description>Онлайн-курс «Руководитель отдела продаж». Уровень: с нуля. Длительность: 14 недель.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">14 недель</param>
+        <oldprice>60700</oldprice>
+        <price>36400</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">4100</param>
+        <currencyId>RUB</currencyId>
+        <param name="Промокод">HH5</param>
+        <param name="Скидка по промокоду в процентах">5</param>
+        <param name="Ссылка на курс">https://online.videoforme.ru/business_school/head-of-sales-prof-web?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Rukovoditel_otdela_prodazh&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+      <offer id="c72cbd38-885e-6ba1-e5ed-651d45336632_online" available="true">
+        <name>Курсы менеджера Wildberries</name>
+        <description>Онлайн-курс «Курсы менеджера Wildberries». Уровень: с нуля. Длительность: 6 недель.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">6 недель</param>
+        <oldprice>46500</oldprice>
+        <price>27900</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">4700</param>
+        <currencyId>RUB</currencyId>
+        <param name="Ссылка на курс">https://online.videoforme.ru/business_school/menedzher-wildberries-web?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Kursy_menedzhera_Wildberries&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+      <offer id="ea763905-468a-f65e-6140-5e99dd9bc672_online" available="true">
+        <name>Фотограф-ретушер от нуля до профи</name>
+        <description>Онлайн-курс «Фотограф-ретушер от нуля до профи». Уровень: с нуля. Длительность: 12 недель.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">12 недель</param>
+        <oldprice>63000</oldprice>
+        <price>37800</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">4200</param>
+        <currencyId>RUB</currencyId>
+        <param name="Промокод">HH5</param>
+        <param name="Скидка по промокоду в процентах">5</param>
+        <param name="Ссылка на курс">https://online.videoforme.ru/photoschool/foto-retush-web?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Fotograf-retusher_ot_nulya_do_profi&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+      <offer id="625be46e-d44c-9583-61a3-6298853cedce_online" available="true">
+        <name>Курсы ивент-менеджера</name>
+        <description>Онлайн-курс «Курсы ивент-менеджера». Уровень: с нуля. Длительность: 5 недель.</description>
+        <param name="Уровень курса">С Нуля</param>
+        <param name="Формат курса">ONLINE</param>
+        <param name="Длительность курса">5 недель</param>
+        <oldprice>38900</oldprice>
+        <price>23300</price>
+        <discount>40</discount>
+        <param name="Ежемесячный платеж">3900</param>
+        <currencyId>RUB</currencyId>
+        <param name="Ссылка на курс">https://online.videoforme.ru/tvschool/event-organizer-web?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Kursy_ivent-menedzhera&amp;utm_term=hh_cpa</param>
+        <param name="Выдаётся сертификат">Да</param>
+        <param name="Помощь с трудоустройством">Нет</param>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>
