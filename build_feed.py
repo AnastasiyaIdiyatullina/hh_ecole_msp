@@ -39,7 +39,12 @@ REQUEST_DELAY = 1.0     # пауза между запросами, сек
 
 NUM = r"(\d{1,3}(?:[\s  ]\d{3})+|\d{3,6})"
 CUR = r"\s*(?:₽|руб\.?|р\.|р\b)"
-RE_MONEY_TEXT = re.compile(NUM + CUR, re.I)
+RE_MONEY_TEXT = re.compile(
+    r"(?<!\d)(?<!до\s)(?<!от\s)(?<![-–−])(?<![-–−]\s)(?<!экономите:\s)" + NUM + CUR, re.I
+)
+# две суммы подряд: «27 600 ₽ 46 000 ₽» (цена и старая цена рядом); суммы с «/мес» не в счёт
+AMT = NUM + CUR + r"(?!\s*(?:/|в|за)?\s*мес)"
+RE_PAIR = re.compile(r"(?<!\d)" + AMT + r"\s+" + AMT, re.I)
 RE_MONTHLY = re.compile(NUM + CUR + r"\s*(?:/|в|за)?\s*мес", re.I)
 RE_JSON_PRICE = re.compile(
     r'"(?:price|old_?price|full_?price|base_?price|discount_?price|new_?price|'
@@ -144,6 +149,30 @@ def find_pair(cands: Counter, prev_old: int, prev_price: int, prev_discount: int
     return None
 
 
+def adjacent_pairs(raw_html: str) -> Counter:
+    """Соседние суммы «X ₽ Y ₽» - цена и старая цена рядом. Суммы с «/мес» не считаются."""
+    c: Counter = Counter()
+    for m in RE_PAIR.finditer(strip_html(raw_html)):
+        a, b = to_int(m.group(1)), to_int(m.group(2))
+        hi, lo = max(a, b), min(a, b)
+        if hi != lo and lo >= 1000 and hi <= 1_000_000 and 0.2 <= lo / hi <= 0.95:
+            c[(hi, lo)] += 1
+    return c
+
+
+def pair_from_text(raw_html: str, prev_old: int, prev_price: int, prev_discount: int):
+    """Главный способ: пара цен, стоящих на странице рядом и подтверждённая прежним фидом
+    (совпала старая цена, цена или пропорция скидки). Возвращает (old, price, "high") или None."""
+    pairs = adjacent_pairs(raw_html)
+    if not pairs:
+        return None
+    (hi, lo), _ = max(pairs.items(), key=lambda kv: (kv[1], kv[0][0]))
+    ratio = 1 - prev_discount / 100
+    if hi == prev_old or lo == prev_price or abs(lo / hi - ratio) <= DISCOUNT_TOL:
+        return hi, lo, "high"
+    return None  # пара не подтверждена прежним фидом - не доверяем, дальше запасной способ
+
+
 # ---------- фид ----------
 
 def offer_param(offer, name):
@@ -190,8 +219,16 @@ def process_offer(session, offer, debug=False):
     prev_price = int(offer.findtext("price"))
     prev_disc = int(offer.findtext("discount") or 0)
 
-    pair = find_pair(cands, prev_old, prev_price, prev_disc)
+    pair = pair_from_text(raw, prev_old, prev_price, prev_disc)
+    if debug:
+        print(f"  соседние пары: {dict(adjacent_pairs(raw))}")
+    if pair is None:
+        pair = find_pair(cands, prev_old, prev_price, prev_disc)
     if not pair:
+        found = sorted(adjacent_pairs(raw))
+        if found:
+            return None, (f"{name}: на странице найдены цены {found}, но они не совпали с прежними, "
+                          f"проверьте вручную")
         return None, f"{name}: на странице не найдены цены (возможно, поменялась вёрстка или цены рисуются JS)"
     old, new, conf = pair
     if debug:
@@ -210,6 +247,8 @@ def process_offer(session, offer, debug=False):
         note = "старую цену на странице подтвердить не удалось, оставлена прежняя"
 
     monthly = find_monthly(raw, new)
+    if debug:
+        print(f"  платёж в месяц: {monthly}")
     return {
         "oldprice": old,
         "price": new,
