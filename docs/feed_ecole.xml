@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-11-10T22:48:56+03:00">
+<yml_catalog date="2026-11-11T09:34:12+03:00">
   <shop>
     <name>Академия Эколь</name>
     <description>Онлайн-академия индустрии красоты: косметология, массаж, ногти, ресницы, стиль</description>
@@ -15,8 +15,8 @@
         <param name="Формат курса">ONLINE</param>
         <param name="Длительность курса">4 часа</param>
         <oldprice>19900</oldprice>
-        <price>11900</price>
-        <discount>40</discount>
+        <price>9900</price>
+        <discount>50</discount>
         <param name="Ежемесячный платеж">4200</param>
         <currencyId>RUB</currencyId>
         <param name="Ссылка на курс">https://online.ecolespb.ru/makeup-school/visage?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Kursy_vizazhistov_dlya_nachinayuschikh&amp;utm_term=hh_cpa</param>
@@ -30,8 +30,8 @@
         <param name="Формат курса">ONLINE</param>
         <param name="Длительность курса">4 часа</param>
         <oldprice>8000</oldprice>
-        <price>4800</price>
-        <discount>40</discount>
+        <price>4000</price>
+        <discount>50</discount>
         <param name="Ежемесячный платеж">0</param>
         <currencyId>RUB</currencyId>
         <param name="Ссылка на курс">https://online.ecolespb.ru/manicure-school/kursy-manikyura?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Kursy_manikyura_dlya_nachinayuschikh&amp;utm_term=hh_cpa</param>
@@ -45,8 +45,8 @@
         <param name="Формат курса">ONLINE</param>
         <param name="Длительность курса">6 часов</param>
         <oldprice>22700</oldprice>
-        <price>13600</price>
-        <discount>40</discount>
+        <price>11300</price>
+        <discount>50</discount>
         <param name="Ежемесячный платеж">4600</param>
         <currencyId>RUB</currencyId>
         <param name="Ссылка на курс">https://online.ecolespb.ru/cosmetology-school/upkeep?utm_source=hhcareer&amp;utm_medium=cpa&amp;utm_content=Kursy_esteticheskoy_kosmetologii&amp;utm_term=hh_cpa</param>
@@ -60,9 +60,9 @@
         <param name="Формат курса">ONLINE</param>
         <param name="Длительность курса">18 часов</param>
         <oldprice>48200</oldprice>
-        <price>28900</price>
-        <discount>40</discount>
-        <param name="Ежемесячный платеж">3300</param>
+        <price>24100</price>
+        <discount>50</discount>
+        <param name="Ежемесячный платеж">4100</param>
         <currencyId>RUB</currencyId>
         <param name="Промокод">HH5</param>
         <param name="Скидка по промокоду в процентах">5</param>
@@ -77,9 +77,9 @@
         <param name="Формат курса">ONLINE</param>
         <param name="Длительность курса">13 часов</param>
         <oldprice>60700</oldprice>
-        <price>36400</price>
-        <discount>40</discount>
-        <param name="Ежемесячный платеж">3100</param>
+        <price>30300</price>
+        <discount>50</discount>
+        <param name="Ежемесячный платеж">3400</param>
         <currencyId>RUB</currencyId>
         <param name="Промокод">HH5</param>
         <param name="Скидка по промокоду в процентах">5</param>
@@ -94,9 +94,9 @@
         <param name="Формат курса">ONLINE</param>
         <param name="Длительность курса">12 часов</param>
         <oldprice>46000</oldprice>
-        <price>27600</price>
-        <discount>40</discount>
-        <param name="Ежемесячный платеж">3100</param>
+        <price>23000</price>
+        <discount>50</discount>
+        <param name="Ежемесячный платеж">3900</param>
         <currencyId>RUB</currencyId>
         <param name="Промокод">HH5</param>
         <param name="Скидка по промокоду в процентах">5</param>
@@ -111,9 +111,9 @@
         <param name="Формат курса">ONLINE</param>
         <param name="Длительность курса">6 часов</param>
         <oldprice>33400</oldprice>
-        <price>20000</price>
-        <discount>40</discount>
-        <param name="Ежемесячный платеж">3400</param>
+        <price>16700</price>
+        <discount>50</discount>
+        <param name="Ежемесячный платеж">2800</param>
         <currencyId>RUB</currencyId>
         <param name="Промокод">HH5</param>
         <param name="Скидка по промокоду в процентах">5</param>
@@ -128,8 +128,8 @@
         <param name="Формат курса">ONLINE</param>
         <param name="Длительность курса">36 часов</param>
         <oldprice>59900</oldprice>
-        <price>35900</price>
-        <discount>40</discount>
+        <price>29900</price>
+        <discount>50</discount>
         <param name="Ежемесячный платеж">4000</param>
         <currencyId>RUB</currencyId>
         <param name="Промокод">HH5</param>
