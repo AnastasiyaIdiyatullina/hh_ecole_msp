@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-11-11T09:33:55+03:00">
+<yml_catalog date="2026-11-11T22:39:47+03:00">
   <shop>
     <name>МШП</name>
     <description>Онлайн-школа профессий и навыков: дизайн, маркетинг, психология, бизнес</description>
@@ -122,9 +122,9 @@
         <param name="Формат курса">ONLINE</param>
         <param name="Длительность курса">14 недель</param>
         <oldprice>60700</oldprice>
-        <price>36400</price>
-        <discount>40</discount>
-        <param name="Ежемесячный платеж">4100</param>
+        <price>30300</price>
+        <discount>50</discount>
+        <param name="Ежемесячный платеж">3400</param>
         <currencyId>RUB</currencyId>
         <param name="Промокод">HH5</param>
         <param name="Скидка по промокоду в процентах">5</param>
